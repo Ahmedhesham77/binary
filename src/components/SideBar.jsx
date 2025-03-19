@@ -20,9 +20,9 @@ const Sidebar = () => {
             </Button>
 
             {isSidebarVisible && (
-                <div style={{ width: '150px', height: '100vh', backgroundColor: '#343a40', padding: '20px', position: 'fixed' }}>
+                <div style={{ width: '150px', height: '100vh', backgroundColor: '#343a40', padding: '20px', position: 'fixed', zIndex: 10 }}>
                     <h2 className="text-white">Sidebar</h2>
-                    <Nav className="flex-column">
+                    <Nav className="flex-column ">
                         <Nav.Item>
                             <Link to="/sign-in" className="text-white">Sign In</Link>
                         </Nav.Item>
