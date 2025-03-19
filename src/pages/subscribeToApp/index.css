@@ -1,0 +1,9 @@
+@media (max-width: 576px) {
+    .subscribe-txt {
+        font-size: 24px !important; 
+    }
+
+    .account {
+        font-size: 14px !important;
+    }
+}

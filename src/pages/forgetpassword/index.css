@@ -1,0 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+.image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to left, #DDEDFF 50%, #B8D9FF 100%);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.rockstar-font{
+    font-family: 'Rock Salt'
+}

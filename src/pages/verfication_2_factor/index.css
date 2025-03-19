@@ -1,0 +1,9 @@
+.image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #DDEDFF 100%, #B8D9FF 100%);
+    padding: 20px;
+    border-radius: 10px;
+}
