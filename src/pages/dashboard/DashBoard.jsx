@@ -7,10 +7,10 @@ export default function Dashboard() {
         <div className="container-fluid bg-white">
             <Header />
             <div className="row">
-                <div className="col-md-6 mb-4">
+                <div className="col-md-4 mb-4">
                     <UserDetails />
                 </div>
-                <div className="col-md-6 mb-4">
+                <div className="col-md-8 mb-4">
                     <Home />
                 </div>
             </div>

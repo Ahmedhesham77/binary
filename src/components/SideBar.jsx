@@ -11,16 +11,16 @@ const Sidebar = () => {
 
     return (
         <div style={{ display: 'flex' }}>
-            <Button
+            <img src='/images/lamp.png'
                 variant="primary"
                 onClick={toggleSidebar}
-                style={{ position: 'absolute', top: '20px', left: isSidebarVisible ? '160px' : '20px', transition: 'left 0.3s ease' }}
-            >
-                {isSidebarVisible ? 'Hide Sidebar' : 'Show Sidebar'}
-            </Button>
+                style={{ position: 'absolute', top: '20px', left: isSidebarVisible ? '160px' : '20px', transition: 'left 0.3s ease', zIndex: 5555555, width: "40px" }}
+            />
+
+
 
             {isSidebarVisible && (
-                <div style={{ width: '150px', height: '100vh', backgroundColor: '#343a40', padding: '20px', position: 'fixed', zIndex: 10 }}>
+                <div style={{ width: '150px', height: '100vh', backgroundColor: '#343a40', padding: '20px', position: 'fixed', zIndex: 10000000 }}>
                     <h2 className="text-white">Sidebar</h2>
                     <Nav className="flex-column ">
                         <Nav.Item>
@@ -46,6 +46,9 @@ const Sidebar = () => {
                         </Nav.Item>
                         <Nav.Item>
                             <Link to="/dashboard" className="text-white">Dashboard</Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Link to="/successfuly" className="text-white">Successfuly</Link>
                         </Nav.Item>
                     </Nav>
                 </div>

@@ -1,134 +1,68 @@
-import { CButton, CCard } from "@coreui/react";  // تأكد من استيراد CButton و CCard بشكل صحيح
-
+import { CCard, CCardBody, CCardHeader, CRow, CCol, CBadge } from "@coreui/react";
 const UserDetails = () => {
-    const handleButtonClick = (message) => {
-        alert(message);
-    };
+
 
     return (
-        <div className="container mt-4">
-            <div className="row">
-                <div className="col-12">
-                    {/* Card Section */}
-                    <CCard className="shadow-sm" style={{ maxWidth: "400px", margin: "auto" }}>
-                        <div className="card-body">
-                            <div className="text-center mb-4">
-                                <img
-                                    src="/images/company.png"
-                                    className="img-fluid mb-3"
-                                    style={{ maxWidth: "250px", height: "80px" }}  // تقليل حجم الصورة
-                                    alt="Company Logo"
-                                />
-                                <div className="mb-3">
-                                    <span className="text-muted d-block mb-2">Company Name Company Name</span>
-                                    <span className="h5">100205</span>  {/* تقليل حجم الرقم */}
-                                </div>
-                                <div className="d-flex justify-content-between">
-                                    <CButton
-                                        color="success"
-                                        className="btn-sm"  // تقليل حجم الزر
-                                        onClick={() => handleButtonClick("License status: Active")}
-                                    >
-                                        <span className="text-dark">License status: Active</span>
-                                    </CButton>
-                                    <CButton
-                                        color="light"
-                                        className="btn-sm"  // تقليل حجم الزر
-                                        onClick={() => handleButtonClick("Test Test")}
-                                    >
-                                        <span className="text-muted">Test Test</span>
-                                    </CButton>
-                                </div>
-                            </div>
-                        </div>
+        <CCard className="shadow-sm p-3 ms-2 mt-4" style={{ maxWidth: "525px" }}>
+            {/* Header - Logo */}
+            <CCardHeader className="text-center border-0" style={{ backgroundColor: "#F5F5F5" }}>
+                <img src="/images/company.png" alt="Company Logo" height="120" />
+            </CCardHeader>
 
-                        <CButton
+            <CCardBody>
+                {/* Company Info */}
+                <p className="text-muted">Company Name <span className="text-muted">Company Name</span></p>
+                <h5 className="fw-bold">100205</h5>
 
-                            className="btn-sm btn-block mt-4"  // تقليل حجم الزر
-                            onClick={() => handleButtonClick("Subscription is about to expire")}
-                            style={{
-                                border: "2px dashed yellow",  // إضافة border dashed بلون أصفر
-                            }}
-                        >
-                            <img
-                                src="/images/lamp.png"
-                                className="mr-3"
-                                style={{ width: "20px", height: "20px" }}  // تقليل حجم الصورة
-                                alt="Warning Icon"
-                            />
-                            <span className="text-dark">Subscription is about to expire</span>
-                            <span className="text-warning font-weight-bold ml-2">3 Days</span>
-                        </CButton>
-                    </CCard>
-
-                    {/* Alert Section */}
-
-
-                    {/* User Details Section */}
-                    <CCard className="mt-4 shadow-sm" style={{ maxWidth: "400px", margin: "auto" }}>
-                        <div className="card-body">
-                            <h5 className="card-title">User Login Details</h5>
-                            <div className="mb-3">
-                                <div className="d-flex align-items-center mb-2">
-                                    <img
-                                        src="/images/profile.png"
-                                        className="mr-2"
-                                        style={{ width: "14px", height: "14px" }}  // تقليل حجم الأيقونة
-                                        alt="Admin Icon"
-                                    />
-                                    <span className="text-muted">Admin</span>
-                                </div>
-                                <div className="d-flex align-items-center mb-2">
-                                    <img
-                                        src="/images/user.png"
-                                        className="mr-2"
-                                        style={{ width: "14px", height: "14px" }}  // تقليل حجم الأيقونة
-                                        alt="User Icon"
-                                    />
-                                    <span className="text-muted">Noor Alfaleet</span>
-                                </div>
-                                <div className="d-flex align-items-center mb-2">
-                                    <img
-                                        src="/images/message.ong"
-                                        className="mr-2"
-                                        style={{ width: "14px", height: "14px" }}  // تقليل حجم الأيقونة
-                                        alt="Email Icon"
-                                    />
-                                    <span className="text-muted">noor****@gmail.com</span>
-                                </div>
-                                <div className="d-flex align-items-center">
-                                    <img
-                                        src="/images/calendar-2.png"
-                                        className="mr-2"
-                                        style={{ width: "14px", height: "14px" }}  // تقليل حجم الأيقونة
-                                        alt="Date Icon"
-                                    />
-                                    <span className="text-muted">Sat, 12.07.2024 10:05 am</span>
-                                </div>
-                            </div>
-                            <div className="d-flex justify-content-between">
-                                <CButton
-                                    color="outline-success"
-                                    className="btn-sm"  // تقليل حجم الزر
-                                    onClick={() => handleButtonClick("Active Devices")}
-                                >
-                                    <span className="font-weight-bold">Active Devices</span>
-                                    <span className="h5">3</span>  {/* تقليل حجم الرقم */}
-                                </CButton>
-                                <CButton
-                                    color="outline-danger"
-                                    className="btn-sm"  // تقليل حجم الزر
-                                    onClick={() => handleButtonClick("Failed Attempts")}
-                                >
-                                    <span className="font-weight-bold">Failed Attempts</span>
-                                    <span className="text-muted">2 Last Day</span>
-                                </CButton>
-                            </div>
-                        </div>
-                    </CCard>
+                {/* License Status */}
+                <div className="d-flex align-items-center justify-content-between my-3">
+                    <CBadge style={{ backgroundColor: "#E0FFE3", color: "#29292A", fontWeight: "light" }} className="p-3 w-75 fs-6  ">License status:<span style={{ color: "#59C762" }} >Active</span> </CBadge>
+                    <CBadge style={{ backgroundColor: "#F5F5F5", color: "#696A6C" }} className="p-3 ">Test Test</CBadge>
                 </div>
-            </div>
-        </div>
+
+                {/* Subscription Warning */}
+                <div
+                    className="d-flex align-items-center justify-content-between p-3 rounded"
+                    style={{
+                        backgroundColor: "#FFF9EC",
+                        border: "2px dashed #FDB528",  // Border dashed بلون FDB528
+                    }}
+                >
+                    <span> <img src="/images/lamp.png" alt="" /> Subscription is about to expire</span>
+                    <strong className="text-dark fs-5"><span style={{ color: " #FDB528" }} > 3</span> Days</strong>
+                </div>
+
+                <CRow className="mt-5">
+                    <CCol>
+                        <h6 className="fw-bold mb-2">User Login Details</h6>
+                        <ul className="list-unstyled">
+                            <li>    <img src="/images/user.png" alt="" /> <strong>Admin</strong></li>
+                            <li>    <img src="/images/profile.png" alt="" /> Noor Alfaleet</li>
+                            <li>    <img src="/images/message.png" alt="" /> noor****@gmail.com</li>
+                            <li>    <img src="/images/calendar-2.png" alt="" /> Sat, 12.07.2024 10:05 am</li>
+                        </ul>
+
+                    </CCol>
+                </CRow>
+
+
+                {/* Devices & Attempts */}
+                <CRow className="text-center mt-3">
+                    <CCol className="border-end">
+                        <div className=" bg-light rounded " style={{ border: "2px dashed #3FBC48" }}>
+                            <p className="mb-0 text-success">Active Devices</p>
+                            <h5 className="fw-bold ">3</h5>
+                        </div>
+                    </CCol>
+                    <CCol>
+                        <div className="bg-light rounded" style={{ border: "2px dashed #CC302B" }}>
+                            <p className="mb-0 text-danger">Failed Attempts</p>
+                            <h5 className="fw-bold">2 <span className="text-muted " style={{ fontWeight: "normal" }}>Last days</span></h5>
+                        </div>
+                    </CCol>
+                </CRow>
+            </CCardBody>
+        </CCard>
     );
 };
 

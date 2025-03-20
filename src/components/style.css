@@ -1,0 +1,40 @@
+
+.menu-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+
+}
+
+
+.menu-container.menu-open {
+    max-height: 500px; 
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.menu-container.menu-open {
+    max-height: 500px; 
+}
+
+.navbar-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; 
+}
+
+@media (max-width:766px) {
+    .menu-container {
+      width: 100%;
+    
+    }
+}

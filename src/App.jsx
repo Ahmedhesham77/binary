@@ -10,6 +10,7 @@ import NewPassword from './pages/newpassword/NewPassword';
 import PasswordChanged from './pages/passwordChanged/PasswordChanged';
 import SubSubscribeToApp from './pages/subscribeToApp/SubSucribeToApp';
 import Dashboard from './pages/dashboard/DashBoard';
+import SuccessfulCreated from './pages/SuccessfulCreated/SuccessfulCreated';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/password-changed" element={<PasswordChanged />} />
           <Route path="/subscribe" element={<SubSubscribeToApp />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/successfuly" element={<SuccessfulCreated />} />
         </Routes>
       </div>
     </Router>
