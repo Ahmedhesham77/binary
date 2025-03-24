@@ -1,6 +1,11 @@
 .password-changed-container{
     min-height: 100vh;
+    background-image: url('/images/back1.png'), url('/images/back2.png');
+    background-position: center right,bottom left; /* تحديد مواضع الصور */
+    background-repeat: no-repeat, no-repeat; /* منع التكرار */
+    background-size:auto ,auto /* ضبط حجم الصور */
 }
+
 .password-changed-container>.container{
     max-width: 645px;
 }

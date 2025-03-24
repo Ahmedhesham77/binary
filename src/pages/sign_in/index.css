@@ -1,4 +1,5 @@
 
+
 .main-container-sign-in{
 
   display: flex;
@@ -6,8 +7,13 @@
   min-height: 100vh ;
   width: 100vw;
   border-radius: 1rem;
-  background-color: white;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background-image: url('/images/back1.png'), url('/images/back2.png');
+  background-position: top left, bottom right; /* تحديد مواضع الصور */
+    background-repeat: no-repeat, no-repeat; /* منع التكرار */
+    background-size: contain, cover; /* ضبط حجم الصور */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+
 }
 
 .main-container-sign-in>.container{
