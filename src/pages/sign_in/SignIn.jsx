@@ -28,7 +28,7 @@ const FrameScreen = () => {
             <div className="container  ">
                 <div className="row align-items-center">
                     <div className="col-sm-4 col-md-6  text-center">
-                        <img className="sign-in  img-fluid w-100  " alt="Group" src="/images/signIn.png" />
+                        <img className="sign-in" alt="Group" src="/images/signIn.png" />
                     </div>
 
                     <div className="col-sm-4 col-md-6 col-lg-5 p-3 mt-4">
