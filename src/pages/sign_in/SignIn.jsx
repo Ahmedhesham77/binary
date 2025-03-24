@@ -25,15 +25,15 @@ const FrameScreen = () => {
 
     return (
         <div className="main-container-sign-in">
-            <div className="container  ">
+            <div className="container ">
                 <div className="row align-items-center">
                     <div className="col-md-6 d-none d-md-block text-center">
-                        <img className="sign-in -img img-fluid " alt="Group" src="/images/signIn.png" />
+                        <img className="sign-in  img-fluid " alt="Group" src="/images/signIn.png" />
                     </div>
 
                     <div className="col-sm-4 col-md-6 col-lg-5 p-3 mt-4">
                         <div className="col d-flex flex-column text-start ">
-                            <h2 className="text-dark fs-1 sign-in-txt mb-0">Sign in</h2>
+                            <h2 className="text-dark fs-1 sign-in-txt mb-2">Sign in</h2>
                             <p className="text-secondary">You can log in to your account.</p>
                         </div>
 
