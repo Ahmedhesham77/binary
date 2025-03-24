@@ -11,7 +11,7 @@ const ChooseSend = () => {
 
 
                 <CCard className="shadow-lg py-2 px-3">
-                    <CCardBody className="d-flex flex-column align-items-center text-center gap-2">
+                    <CCardBody className="d-flex flex-column justify-content-around align-items-center text-center gap-2 min-vh-100">
                         <div className="image-container">
                             <img src={"/images/protect.svg"} alt="Protect" className="img-fluid w-50 mb-1" /> {/* تقليل المسافة أسفل الصورة */}
                         </div>
