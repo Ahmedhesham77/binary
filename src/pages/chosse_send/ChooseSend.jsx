@@ -6,13 +6,13 @@ const ChooseSend = () => {
     return (
 
         <div className="choose-send-container">
-            <CContainer fluid className="  d-flex align-items-center justify-content-center ">
+            <CContainer fluid className="  d-flex align-items-center justify-content-center my-2">
                 <CRow className="w-100 justify-content-center">
                     <CCol md={5}>
                         <CCard className="shadow-lg py-2 px-3">
                             <CCardBody className="d-flex flex-column align-items-center text-center gap-2">
                                 <div className="image-container">
-                                    <img src={"/images/protect.png"} alt="Protect" className="img-fluid w-50 mb-1" /> {/* تقليل المسافة أسفل الصورة */}
+                                    <img src={"/images/protect.svg"} alt="Protect" className="img-fluid w-50 mb-1" /> {/* تقليل المسافة أسفل الصورة */}
                                 </div>
                                 <h2 className="fw-bold text-dark text-start">Choose how to send the verification code</h2> {/* تصغير حجم العنوان */}
                                 <p className="text-secondary mb-2 text-start">Please choose one of the methods to receive your verification code</p> {/* تقليل المسافة أسفل النص */}
