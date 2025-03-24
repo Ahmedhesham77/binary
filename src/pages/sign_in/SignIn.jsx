@@ -70,7 +70,7 @@ const FrameScreen = () => {
 
                             <CInputGroup>
                                 <CInputGroupText >
-                                    <img src="/images/lock.png" alt="" />
+                                    <img src="/images/lock.png" alt="" className="bg-white" />
                                 </CInputGroupText>
                                 <CFormInput
                                     type="password"
@@ -80,7 +80,7 @@ const FrameScreen = () => {
                                     onChange={handleChange}
                                     className="form-control sign-in-input"
                                 />
-                                <CInputGroupText >
+                                <CInputGroupText className="bg-white" >
                                     <BsEye />
                                 </CInputGroupText>
 

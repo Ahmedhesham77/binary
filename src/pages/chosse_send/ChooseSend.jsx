@@ -6,7 +6,7 @@ const ChooseSend = () => {
     return (
 
         <div className="choose-send-container">
-            <CContainer fluid className="d-flex align-items-center justify-content-center flex-grow-1 min-vh-100">
+            <CContainer fluid className="d-flex align-items-center justify-content-center flex-grow-1 ">
 
                 <CRow className="w-100 justify-content-center">
                     <CCol md={5} className=" w-md-auto">
