@@ -4,10 +4,12 @@
     display: flex;
     flex-direction: column;
 }
-.choose-send-container>.container-fluid{
-    height: 90% ;
-    margin-block: auto 
+.choose-send-container>.container{
+    height: 100% ;
+    justify-content: center;
+    margin-block:  1rem;
 }
+
 .CButton:hover{
     background-color: #DDEDFF !important;
     color: #1B85FF !important;
@@ -23,15 +25,27 @@
 }
 
 
+@media (max-width: 576px) {
 
-@media (max-width: 768px) {
-    h2 {
-        font-size: 1.2rem !important;
+    .send-verfication-btn,
+   .have-code-btn {
+        font-size: 0.550rem !important;  
+        padding: 10px 12px !important;
+        min-width: 120px !important;  
     }
-    
-    p {
-        font-size: 0.9rem !important;
+
+    .d-flex .CButton {
+        font-size: 0.60rem;
+        width: 3.5rem;
+        font-weight: 600;
+        padding: 10px 12px !important;
     }
+
+}
+
+
+@media (min-width: 576px) {
+
 
     .d-flex .CButton {
         font-size: 0.50rem;
@@ -53,5 +67,33 @@
     .d-flex.justify-content-evenly {
         gap: 5px !important;
     }
+}
+
+@media (min-width: 768px) {
+    .send-verfication-btn,
+    .have-code-btn {
+         font-size: 0.50rem !important;  
+         padding: 12px  !important;
+         min-width: 110px !important;  
+     }
+
+     .d-flex .CButton {
+        font-size: 0.50rem;
+        width: 4.5rem;
+        font-weight: 600;
+        padding: 12px 0  !important;
+    }
+}
+
+@media (min-width: 992px) {
+ 
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1400px) {
+
 }
 
