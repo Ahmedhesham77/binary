@@ -6,7 +6,7 @@
 }
 .choose-send-container>.container-fluid{
     height: 90% ;
-
+    margin-block: auto 
 }
 .CButton:hover{
     background-color: #DDEDFF !important;

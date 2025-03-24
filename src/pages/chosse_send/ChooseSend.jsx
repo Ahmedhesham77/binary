@@ -6,9 +6,10 @@ const ChooseSend = () => {
     return (
 
         <div className="choose-send-container">
-            <CContainer fluid className="  d-flex align-items-center justify-content-center my-2">
+            <CContainer fluid className="d-flex align-items-center justify-content-center flex-grow-1 min-vh-100">
+
                 <CRow className="w-100 justify-content-center">
-                    <CCol md={5}>
+                    <CCol md={5} className=" w-md-auto">
                         <CCard className="shadow-lg py-2 px-3">
                             <CCardBody className="d-flex flex-column align-items-center text-center gap-2">
                                 <div className="image-container">
