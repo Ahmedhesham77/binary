@@ -1,6 +1,6 @@
 .new-password-container>.container{
     height: 90%;
-    margin-block: auto;
+
 }
 
 .new-password-img-container {
@@ -20,7 +20,7 @@
 
 @media (max-width:567px) {
     .new-password-container>.container{
-      padding: 0.5rem !important;
+      padding: 1rem !important;
     }
     
 }

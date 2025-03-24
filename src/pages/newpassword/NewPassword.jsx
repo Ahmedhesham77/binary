@@ -6,8 +6,8 @@ export default function NewPassword() {
     return (
         <div className="d-flex flex-column justify-content-center align-items-center min-vh-100 new-password-container">
             <CContainer
-                className="d-flex flex-column justify-content-center align-items-center bg-white rounded-4 p-4 shadow-lg "
-                style={{ maxWidth: "464px", marginBlock: "auto" }}
+                className="d-flex flex-column justify-content-center align-items-center bg-white rounded-4 p-4 shadow-lg m-2 "
+                style={{ maxWidth: "464px" }}
             >
                 {/* Header Section */}
                 <div className="d-flex flex-column align-items-center w-100 mb-1 ">

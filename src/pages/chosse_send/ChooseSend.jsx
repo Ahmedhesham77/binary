@@ -11,9 +11,9 @@ const ChooseSend = () => {
 
 
                 <CCard className="shadow-lg py-2 px-3">
-                    <CCardBody className="d-flex flex-column justify-content-around align-items-center text-center gap-2">
+                    <CCardBody className="d-flex flex-column justify-content-around align-items-center text-center gap-2" style={{ maxWidth: "464px", marginBlock: "auto" }}  >
                         <div className="image-container">
-                            <img src={"/images/protect.svg"} alt="Protect" className="img-fluid w-50 mb-1" /> {/* تقليل المسافة أسفل الصورة */}
+                            <img src={"/images/protect.svg"} alt="Protect" />
                         </div>
                         <h2 className="fw-bold text-dark text-start">Choose how to send the verification code</h2> {/* تصغير حجم العنوان */}
                         <p className="text-secondary mb-2 text-start">Please choose one of the methods to receive your verification code</p> {/* تقليل المسافة أسفل النص */}

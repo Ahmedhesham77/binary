@@ -3,7 +3,7 @@ import "./index.css"
 import Footer from "../../components/Footer";
 export default function SubSubscribeToApp() {
     return (
-        <div className="d-flex flex-column min-vh-100 subsucribe-container">
+        <div className="d-flex flex-column justify-content-center align-items-center min-vh-100 subsucribe-container">
 
             <CContainer className="d-flex justify-content-center align-items-center rounded-4 shadow-lg p-2 " style={{ marginBlock: "1.5rem" }}>
                 <CCard className="w-100" style={{ border: "0" }}>

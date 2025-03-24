@@ -23,6 +23,9 @@
     padding: 20px;
     border-radius: 10px;
 }
+.image-container>img {
+width: 40% ;
+}
 
 
 @media (max-width: 576px) {
@@ -87,13 +90,23 @@
 
 @media (min-width: 992px) {
  
+    .d-flex .CButton {
+        font-size: 1rem !important;
+        width: 5.5rem;
+        font-weight: 600;
+        padding: 12px 0  !important;
+    }
+    .send-verfication-btn,
+    .have-code-btn {
+         font-size: 1rem !important;  
+         padding: 12px  !important;
+         min-width: 110px !important;  
+     }
 }
 
 @media (min-width: 1200px) {
 
 }
 
-@media (min-width: 1400px) {
 
-}
 
