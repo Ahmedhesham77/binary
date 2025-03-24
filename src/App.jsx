@@ -11,7 +11,7 @@ import PasswordChanged from './pages/passwordChanged/PasswordChanged';
 import SubSubscribeToApp from './pages/subscribeToApp/SubSucribeToApp';
 import Dashboard from './pages/dashboard/DashBoard';
 import SuccessfulCreated from './pages/SuccessfulCreated/SuccessfulCreated';
-import MyProfile from './pages/myProfile/myProfile';
+import MyProfile from './pages/myProfile/MyProfile';
 
 function App() {
   return (
