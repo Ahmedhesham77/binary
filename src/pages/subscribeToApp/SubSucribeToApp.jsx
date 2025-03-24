@@ -5,7 +5,7 @@ export default function SubSubscribeToApp() {
     return (
         <div className="d-flex flex-column justify-content-center align-items-center min-vh-100 subsucribe-container">
 
-            <CContainer className="d-flex justify-content-center align-items-center rounded-4 shadow-lg p-2 " style={{ marginBlock: "1.5rem" }}>
+            <CContainer className="d-flex justify-content-center align-items-center rounded-4 shadow-lg p-2 " >
                 <CCard className="w-100" style={{ border: "0" }}>
                     <CCardBody className="bg-white p-3 border-0">
                         <CRow className="d-flex align-items-center">
