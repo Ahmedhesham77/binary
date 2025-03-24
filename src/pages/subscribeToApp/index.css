@@ -1,3 +1,8 @@
+.subsucribe-container>.container{
+height: 90%;
+}
+
+
 @media (max-width: 576px) {
     .subscribe-txt {
         font-size: 24px !important; 
