@@ -1,0 +1,26 @@
+.new-password-container>.container{
+    height: 90%;
+    margin-block: auto;
+}
+
+.new-password-img-container {
+  padding: 3rem 4rem;
+    background: linear-gradient(to left, #DDEDFF 0%, #B8D9FF 100%);
+}
+
+.text-container>h4{
+    color: #29292A;
+    font-weight: 800;
+}
+
+.password-fields>span{
+    color: #B62A26;
+    font-size: 1rem;
+}
+
+@media (max-width:567px) {
+    .new-password-container>.container{
+      padding: 0.5rem !important;
+    }
+    
+}

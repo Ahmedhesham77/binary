@@ -4,6 +4,7 @@ import { TbSettings2 } from "react-icons/tb";
 import { CiLight } from "react-icons/ci";
 import { CiDark } from "react-icons/ci";
 import { HiOutlineComputerDesktop } from "react-icons/hi2";
+import { Link } from "react-router-dom";
 
 import "./style.css";
 
@@ -22,7 +23,7 @@ const Header = () => {
     ];
     return (
         <nav className="navbar navbar-expand-lg bg-light">
-            <div className="container d-flex justify-content-between align-items-center">
+            <div className="container header">
                 {/* Logo */}
                 <a className="navbar-brand" href="#">
                     <img src="/images/logo.png" alt="Logo" height="40" />
@@ -41,14 +42,14 @@ const Header = () => {
                 <div className="d-none d-md-flex align-items-center gap-3">
                     {/* Search Box */}
                     <div className="d-flex align-items-center search-box">
-                        <button className="border-0 bg-transparent me-2">
+                        <button className="border-0 bg-transparent ">
                             <img src="/images/search.png" alt="Search" height="20" />
                         </button>
                         <input
                             type="text"
                             placeholder="Search"
                             className="border-0 fs-6 form-control"
-                            style={{ maxWidth: "200px" }}
+                            style={{ maxWidth: "200px", backgroundColor: "transparent" }}
                         />
                     </div>
 
@@ -168,9 +169,9 @@ const Header = () => {
                                 </div>
                             </div>
                             <hr className="m-1" />
-                            <a href="#" className="dropdown-item d-flex align-items-center">
+                            <Link to="/myprofile" className="dropdown-item d-flex align-items-center">
                                 <HiOutlineUser size={20} className="pe-1" /> My Profile
-                            </a>
+                            </Link>
                             <a href="#" className="dropdown-item d-flex align-items-center">
                                 <TbSettings2 size={20} className="pe-1" /> Settings
                             </a>

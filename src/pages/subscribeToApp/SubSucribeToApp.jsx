@@ -1,126 +1,180 @@
-import { CContainer, CRow, CCol, CButton, CCard, CCardBody, CForm, CFormInput } from "@coreui/react";
+import { CContainer, CRow, CCol, CButton, CCard, CCardBody, CForm, CFormInput, CInputGroup, CInputGroupText } from "@coreui/react";
 import "./index.css"
+import Footer from "../../components/Footer";
 export default function SubSubscribeToApp() {
     return (
-        <CContainer className="d-flex justify-content-center align-items-center" style={{ height: "100vh" }}>
-            <CCard className="w-100" style={{ maxWidth: "900px", borderRadius: "20px" }}>
-                <CCardBody className="bg-white p-3">
-                    <CRow className="d-flex align-items-center">
-                        <CCol xs={12} md={6} className="d-flex justify-content-center d-none d-md-block">
-                            <img
-                                src="/images/signIn.png"
-                                alt="Subscribe Image"
-                                style={{ maxWidth: "100%", borderRadius: "10px" }}
-                            />
-                        </CCol>
+        <div className="d-flex flex-column min-vh-100 subsucribe-container">
 
-                        <CCol xs={12} md={6}>
-                            <div className="">
-                                <h2 className="text-dark font-weight-bold subscribe-txt" style={{ fontSize: "30px" }}>
-                                    {"Subscribe to applications"}
-                                </h2>
-                                <p className="text-muted account" style={{ fontSize: "16px" }}>
-                                    {"You can subscribe now and fill in your data to register and create an account with us."}
-                                </p>
-                            </div>
+            <CContainer className="d-flex justify-content-center align-items-center rounded-4 shadow-lg p-2 " style={{ marginBlock: "1.5rem" }}>
+                <CCard className="w-100" style={{ border: "0" }}>
+                    <CCardBody className="bg-white p-3 border-0">
+                        <CRow className="d-flex align-items-center">
+                            <CCol xs={12} md={6} className="d-flex justify-content-center d-none d-md-block">
+                                <img
+                                    src="/images/signIn.png"
+                                    alt="Subscribe Image"
+                                    style={{ maxWidth: "100%", borderRadius: "10px" }}
+                                />
+                            </CCol>
 
-                            <CForm>
-                                {/* First Name */}
-                                <div className="mb-1">
-                                    <CFormInput
-                                        id="firstName"
-                                        name="firstName"
-                                        placeholder="Enter First Name"
-                                        type="text"
-                                        required
-                                    />
+                            <CCol xs={12} md={6}>
+                                <div className="">
+                                    <h2 className="text-dark font-weight-bold subscribe-txt" style={{ fontSize: "30px" }}>
+                                        {"Subscribe to applications"}
+                                    </h2>
+                                    <p className="text-muted account" style={{ fontSize: "16px" }}>
+                                        {"You can subscribe now and fill in your data to register and create an account with us."}
+                                    </p>
                                 </div>
 
-                                {/* Last Name */}
-                                <div className="mb-1">
-                                    <CFormInput
-                                        id="lastName"
-                                        name="lastName"
-                                        placeholder="Enter Last Name"
-                                        type="text"
-                                        required
-                                    />
-                                </div>
+                                <CForm>
+                                    {/* First Name */}
+                                    <div className="mb-1">
+                                        <CInputGroup className="border rounded p-1">
+                                            <CInputGroupText className="bg-white border-0 pe-2 p-0">
+                                                <img src="/images/profilee.svg" alt="" />
+                                            </CInputGroupText>
+                                            <CFormInput
+                                                className="border-0 px-0"
+                                                id="firstName"
+                                                name="firstName"
+                                                placeholder="First Name"
+                                                type="text"
+                                                required
+                                            />
+                                        </CInputGroup>
 
-                                {/* Mobile Number */}
-                                <div className="mb-1">
-                                    <CFormInput
-                                        id="mobileNumber"
-                                        name="mobileNumber"
-                                        placeholder="Enter Mobile Number"
-                                        type="text"
-                                        required
-                                    />
-                                </div>
+                                    </div>
 
-                                {/* Email */}
-                                <div className="mb-1">
-                                    <CFormInput
-                                        id="email"
-                                        name="email"
-                                        placeholder="Enter Email"
-                                        type="email"
-                                        required
-                                    />
-                                </div>
+                                    {/* Last Name */}
+                                    <div className="mb-1">
+                                        <CInputGroup className="border rounded p-1">
+                                            <CInputGroupText className="bg-white border-0 pe-2 p-0">
+                                                <img src="/images/profilee.svg" alt="" />
+                                            </CInputGroupText>
+                                            <CFormInput
+                                                className="border-0 px-0"
+                                                id="firstName"
+                                                name="firstName"
+                                                placeholder="Last Name "
+                                                type="text"
+                                                required
+                                            />
+                                        </CInputGroup>
+                                    </div>
 
-                                {/* Company Name */}
-                                <div className="mb-1">
-                                    <CFormInput
-                                        id="companyName"
-                                        name="companyName"
-                                        placeholder="Enter Company Name"
-                                        type="text"
-                                        required
-                                    />
-                                </div>
+                                    {/* Mobile Number */}
+                                    <div className="mb-1">
+                                        <CInputGroup className="border rounded p-1">
+                                            <CInputGroupText className="bg-white border-0 pe-2 p-0">
+                                                <img src="/images/call.svg" alt="" />
+                                            </CInputGroupText>
+                                            <CFormInput
+                                                className="border-0 px-0"
+                                                id="firstName"
+                                                name="firstName"
+                                                placeholder="Mobile Number"
+                                                type="text"
+                                                required
+                                            />
+                                        </CInputGroup>
+                                    </div>
 
-                                {/* Company Sector */}
-                                <div className="mb-1">
-                                    <CFormInput
-                                        id="companySector"
-                                        name="companySector"
-                                        placeholder="Enter Company Sector"
-                                        type="text"
-                                        required
-                                    />
-                                </div>
+                                    {/* Email */}
+                                    <div className="mb-1">
+                                        <CInputGroup className="border rounded p-1">
+                                            <CInputGroupText className="bg-white border-0 pe-2 p-0">
+                                                <img src="/images/sms.png" alt="" />
+                                            </CInputGroupText>
+                                            <CFormInput
+                                                className="border-0 px-0"
+                                                id="firstName"
+                                                name="firstName"
+                                                placeholder="Email"
+                                                type="text"
+                                                required
+                                            />
+                                        </CInputGroup>
+                                    </div>
 
-                                {/* Company Size */}
-                                <div className="mb-1">
-                                    <CFormInput
-                                        id="companySize"
-                                        name="companySize"
-                                        placeholder="Enter Company Size"
-                                        type="text"
-                                        required
-                                    />
-                                </div>
+                                    {/* Company Name */}
+                                    <div className="mb-1">
+                                        <CInputGroup className="border rounded p-1">
+                                            <CInputGroupText className="bg-white border-0 pe-2 p-0">
+                                                <img src="/images/company-name.svg" alt="" />
+                                            </CInputGroupText>
+                                            <CFormInput
+                                                className="border-0 px-0"
+                                                id="CompanyName"
+                                                name="Company Name"
+                                                placeholder="Company Name"
+                                                type="text"
+                                                required
+                                            />
+                                        </CInputGroup>
+                                    </div>
 
-                                <CRow>
-                                    <CCol xs={12} className="d-flex justify-content-center mb-3">
-                                        <CButton color="primary" className="w-100 py-2 rounded" onClick={() => alert("Pressed!")}>
-                                            <span className="text-white font-weight-bold" style={{ fontSize: "18px" }}>
-                                                {"Subscribe"}
+                                    {/* Company Sector */}
+                                    <div className="mb-1">
+
+                                        <CInputGroup className="border rounded p-1">
+                                            <CInputGroupText className="bg-white border-0 pe-2 p-0">
+                                                <img src="/images/company-sector.svg" alt="" />
+                                            </CInputGroupText>
+                                            <CFormInput
+                                                className="border-0 px-0"
+                                                id="companySector"
+                                                name="companySector"
+                                                placeholder="Company Sector"
+                                                type="text"
+                                                required
+                                            />
+                                        </CInputGroup>
+
+                                    </div>
+
+                                    {/* Company Size */}
+                                    <div className="mb-1">
+                                        <CInputGroup className="border rounded p-1">
+                                            <CInputGroupText className="bg-white border-0 pe-2 p-0">
+                                                <img src="/images/company-size.svg" alt="" />
+                                            </CInputGroupText>
+                                            <CFormInput
+                                                className="border-0 px-0"
+                                                id="companySize"
+                                                name="companySize"
+                                                placeholder="Company Size"
+                                                type="text"
+                                                required
+                                            />
+                                        </CInputGroup>
+
+                                    </div>
+
+                                    <CRow>
+                                        <CCol xs={12} className="d-flex justify-content-center mb-3">
+                                            <CButton color="primary" className="w-100 py-2 rounded" onClick={() => alert("Pressed!")}>
+                                                <span className="text-white font-weight-bold" style={{ fontSize: "18px" }}>
+                                                    {"Subscribe"}
+                                                </span>
+                                            </CButton>
+                                        </CCol>
+                                        <CCol xs={12} className="text-center">
+                                            <span className="text-dark" style={{ fontSize: "18px" }}>
+                                                {"Already have an account? "}
+                                                <a href="#">Log In</a>
                                             </span>
-                                        </CButton>
-                                    </CCol>
-                                    <CCol xs={12} className="text-center">
-                                        <span className="text-dark" style={{ fontSize: "18px" }}>
-                                            {"Already have an account? Log in"}
-                                        </span>
-                                    </CCol>
-                                </CRow>
-                            </CForm>
-                        </CCol>
-                    </CRow>
-                </CCardBody>
-            </CCard>
-        </CContainer>
+                                        </CCol>
+                                    </CRow>
+                                </CForm>
+                            </CCol>
+                        </CRow>
+                    </CCardBody>
+                </CCard>
+            </CContainer>
+
+            <Footer />
+        </div >
+
     );
 }

@@ -1,14 +1,16 @@
 import { CContainer, CRow, CCol, CButton } from "@coreui/react";
-
+import "./style.css"
+import Footer from "../../components/Footer";
 export default function PasswordChanged() {
     return (
         <div
-            className="d-flex justify-content-center align-items-center"
-            style={{ height: "100vh", backgroundColor: "#f4f4f4" }}
+            className="d-flex flex-column justify-content-center align-items-center password-changed-container"
+
         >
             <CContainer
-                className="d-flex flex-column justify-content-center align-items-center bg-white rounded-4 p-4"
-                style={{ height: "450px", maxWidth: "350px" }}
+                className="d-flex flex-column justify-content-center align-items-center bg-white rounded-4 p-4 shadow-lg"
+                style={{ maxWidth: "464px", marginBlock: "auto" }}
+
             >
                 <div
                     className="d-flex flex-column align-items-center justify-content-center w-100 py-3 rounded-3"
@@ -18,73 +20,72 @@ export default function PasswordChanged() {
                 >
                     <img
                         src="/images/protect.png"
-                        className="img-fluid mb-3"
-                        style={{ width: "150px", height: "150px" }}
+                        className="img-fluid mb-3 shield-img"
+
                     />
-                    <div className="d-flex flex-column align-items-center w-100 px-3">
-                        <span className="text-dark font-weight-bold mb-2" style={{ fontSize: "30px" }}>
+                    <div className="d-flex flex-column align-items-center w-100 px-3 password-changed-text">
+                        <h3 className="mb-2" >
                             {"Password is Changed"}
-                        </span>
+                        </h3>
                         <span className="text-muted" style={{ fontSize: "14px" }}>
                             {"You can now log in again."}
                         </span>
                     </div>
                 </div>
 
-                <div className="d-flex flex-column align-items-center w-100 px-3 mt-3">
+                <div className="d-flex flex-column align-items-center w-100 mt-3">
                     <CButton
+
                         color="primary"
-                        className="w-100 py-2 mb-2 rounded-3"
+                        className="w-100 py-2 mb-2 rounded-3 log-in-btn"
                         onClick={() => alert("Pressed!")}
                     >
-                        <span className="text-white font-weight-bold" style={{ fontSize: "16px" }}>
-                            {"Log in"}
-                        </span>
+                        log in
                     </CButton>
 
                     <CRow className="d-flex justify-content-center mb-3">
                         <CCol xs="auto">
-                            <a href="https://example.com/link1" target="_blank" rel="noopener noreferrer">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
                                 <img
-                                    src="https://storage.googleapis.com/tagjs-prod.appspot.com/kLk7fW8S6M/78dto20x.png"
-                                    className="w-100"
-                                    style={{ width: "30px", height: "30px" }}
+                                    src="/images/facebook.png"
+                                    className="w-100 icon-password"
+
                                 />
                             </a>
                         </CCol>
                         <CCol xs="auto">
-                            <a href="https://example.com/link2" target="_blank" rel="noopener noreferrer">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
                                 <img
-                                    src="https://storage.googleapis.com/tagjs-prod.appspot.com/kLk7fW8S6M/a9qpciet.png"
-                                    className="w-100"
-                                    style={{ width: "30px", height: "30px" }}
+                                    src="/images/whatsapp.png"
+                                    className="w-100 icon-password"
+
                                 />
                             </a>
                         </CCol>
                         <CCol xs="auto">
-                            <a href="https://example.com/link3" target="_blank" rel="noopener noreferrer">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
                                 <img
-                                    src="https://storage.googleapis.com/tagjs-prod.appspot.com/kLk7fW8S6M/xg4ov95j.png"
-                                    className="w-100"
-                                    style={{ width: "30px", height: "30px" }}
+                                    src="/images/youtube.png"
+                                    className="w-100 icon-password"
+
                                 />
                             </a>
                         </CCol>
                         <CCol xs="auto">
-                            <a href="https://example.com/link4" target="_blank" rel="noopener noreferrer">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
                                 <img
-                                    src="https://storage.googleapis.com/tagjs-prod.appspot.com/kLk7fW8S6M/er9pqsi7.png"
-                                    className="w-100"
-                                    style={{ width: "30px", height: "30px" }}
+                                    src="/images/linkedin.png"
+                                    className="w-100 icon-password"
+
                                 />
                             </a>
                         </CCol>
                         <CCol xs="auto">
-                            <a href="https://example.com/link5" target="_blank" rel="noopener noreferrer">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
                                 <img
-                                    src="https://storage.googleapis.com/tagjs-prod.appspot.com/kLk7fW8S6M/vmohpz32.png"
-                                    className="w-100 rounded-circle"
-                                    style={{ width: "30px", height: "30px" }}
+                                    src="/images/streamline.png"
+                                    className="w-100  icon-password"
+
                                 />
                             </a>
                         </CCol>
@@ -95,6 +96,7 @@ export default function PasswordChanged() {
                     </span>
                 </div>
             </CContainer>
+            <Footer />
         </div>
     );
 }

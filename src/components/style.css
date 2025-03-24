@@ -1,14 +1,7 @@
-
-.menu-container {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease-in-out;
-
-}
-
-
-.menu-container.menu-open {
-    max-height: 500px; 
+/* header */
+.search-box{
+    width: 70%;
+    margin-left: auto !;
 }
 
 .menu-container {
@@ -19,11 +12,9 @@
     overflow: hidden;
     transition: max-height 0.5s ease-in-out;
 }
-
 .menu-container.menu-open {
     max-height: 500px; 
 }
-
 .navbar-nav {
     display: flex;
     flex-wrap: wrap;
@@ -32,7 +23,189 @@
     gap: 15px; 
 }
 
+/* side bar */
+.side-bar-main>.card-header{
+    text-align: center;
+    border: 0;
+    background-color:#F5F5F5
+}
+.side-bar-main{
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    padding: 1rem;
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+}
+.side-bar-data-container{
+
+    padding: 0.8rem 0.8rem 0 0 !important;
+
+
+}
+.side-bar-data-container>p, .side-bar-data-container p span{
+    color: #858585;
+    font-size: 0.9rem;
+    padding-left: 0.4rem;
+}
+
+.License-status{
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-top: 0.8rem;
+margin-bottom: 1.2rem;
+}
+
+.License-status>.badge{
+    background-color: #E0FFE3;
+     color: #29292A;
+     font-weight:200;
+     padding: 0.45rem;
+     font-size: 1rem;
+     width: 75%;
+     height: 2.8rem;
+     margin-right: 0.4rem;
+     text-align: center;
+     line-height: 1.5rem;
+
+
+}
+.License-status>.badge >span{
+ color: #59C762;
+
+}
+
+.License-status .second-badge{
+background-color: #F5F5F5;
+color: #696A6C;
+width: 25%;
+color: #29292A;
+}
+
+.subscription-warning{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: #FFF9EC;
+    border: 2px dashed #FDB528;
+    margin: auto;
+
+}
+
+.subscription-warning>strong >span{
+       
+   color: #FDB528;
+  
+
+
+}
+
+/* main section */
+
+.col-cards{
+    display: flex;
+    justify-content: center;
+
+}
+.company-card{
+    margin-bottom: 1.2rem;
+    box-shadow: 0px 4px 30px #00000012;
+    max-width: 480px;
+}
+.card-body.new>div{
+text-align: center;
+margin-bottom: 0.6rem;
+}
+
+.card-body.new>div>.badge{
+    border-radius: 0.6rem !important;
+    padding: 0.7rem !important;
+    position: absolute !important;
+    right: 1.2rem !important;
+    top: 0.5rem !important;
+
+}
+.card-body.new>div>img{
+ width: 100%;
+ margin-top: 0.5rem;
+ max-width: 100px;
+ object-fit: cover;
+ border-radius: 12px;
+
+}
+.card-text{
+    text-align: center;
+}
+
+/* footer */
+footer{
+    background-color: #DEDEDE;
+    color: #29292A;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.8rem;
+    position:static;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width:575.98px) {
+
+    .side-bar-main{
+        margin-left: 0;
+    }
+    .License-status .second-badge{
+        width: 30%;
+       }
+    .subscription-warning{
+            width:16.7rem;
+            font-size: 14px;
+            padding: 5px;
+    }
+    .subscription-warning>strong{
+       
+            font-size: 14px;
+            width: 50px;
+            display: inline;
+    }
+    li>img{
+            width: 1.2rem;
+            height: 1.2rem;
+    }
+    .card-text h5,p{
+        font-size: 0.9rem !important;
+    }
+}
+
+
 @media (max-width:766px) {
+
+    
+    .menu-container {
+      width: 100%;
+    
+    }
+}
+@media (min-width:768px) {
+
+    .side-bar-main{
+        margin-top: 1.5rem;
+        padding: 0.2rem;
+    }
+
+    .License-status .second-badge{
+        
+        width: 35%;
+       
+        }
+    
+    .subscription-warning{
+       width: 17rem;
+       font-size: 0.9rem;
+       padding: 0.2rem;
+    }
+
     .menu-container {
       width: 100%;
     

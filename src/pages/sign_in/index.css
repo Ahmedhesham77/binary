@@ -1,6 +1,46 @@
 
-  
+.main-container-sign-in{
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh ;
+  width: 100vw;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.main-container-sign-in>.container{
+ height: 90%;
+  border-radius: 1rem;
+  margin-block: auto ;
+  background-color: white;
+  padding: 0.7rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.sign-in-txt{
+color: #29292A;
+}
+
+.sign-in-input{
+  border-left: 0 !important;
+  border-right: 0 !important;
+}
+
+
+
+  @media (max-width:576px) {
+ 
+    .main-container-sign-in>.container{
+      padding: 0.2rem;
+    }
+   
+  }
   @media (min-width: 577px) and (max-width: 768px) {
+    .main-container-sign-in>.container{
+      padding: 0.5rem;
+    }
     .sign-in {
       width: 90% 
     }
@@ -8,8 +48,11 @@
   
 
   @media (min-width: 993px) {
+
     .sign-in {
       width: 70% 
     }
   }
+
+ 
   

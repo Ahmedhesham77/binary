@@ -11,6 +11,7 @@ import PasswordChanged from './pages/passwordChanged/PasswordChanged';
 import SubSubscribeToApp from './pages/subscribeToApp/SubSucribeToApp';
 import Dashboard from './pages/dashboard/DashBoard';
 import SuccessfulCreated from './pages/SuccessfulCreated/SuccessfulCreated';
+import MyProfile from './pages/myProfile/myProfile';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/subscribe" element={<SubSubscribeToApp />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/successfuly" element={<SuccessfulCreated />} />
+          <Route path="/myprofile" element={<MyProfile />} />
         </Routes>
       </div>
     </Router>

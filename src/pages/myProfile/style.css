@@ -1,0 +1,420 @@
+
+
+.aside{
+    justify-content: space-evenly !important;
+}
+.role{
+    border-radius: 20px !important;
+    color: #FF4D49 !important;
+    background-color: #FFDBDB !important;  
+    padding-block: 0.5rem !important;
+    width: 50%;
+    align-self: center;
+    margin-block: 0.5rem;
+    font-size: 1rem;
+}
+
+.yellow-box{
+    background-color: #FFF3DD;
+    position: relative;
+    border-radius: 16px;
+    margin-inline: 1rem;
+    padding: 0.3rem;
+ 
+}
+
+.task-done,.project-done{
+    display: flex;
+    flex-direction: row ;
+ 
+    width: 40%;
+    align-items: center;
+
+
+}
+
+.cross-btn{
+    width: 24px;
+     height: 24px; 
+     position: absolute;
+     cursor: pointer
+}
+
+.change-password-btn{
+    background-color: #1B85FF !important;
+    color: #ffffff !important; 
+   
+    margin-top: 0.7rem;
+    margin-left: 0.9rem;
+}
+
+.tow-steps-sec>div button{
+  
+    border: 0;
+    background-color: #DDEDFF;
+    border-radius: 12px;
+    padding: 10px 14px;
+    margin-right: 0.8rem;
+  
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .table-responsive .dx-datagrid {
+    min-width: 600px; /* تعديل هذا الرقم حسب الحاجة */
+  }
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* خلفية شبه شفافة */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px); /* تأثير التمويه */
+    overflow-y: auto;
+}
+.custom-scroll {
+    flex-grow: 1;
+    max-height: calc(100vh - 100px); /* يحسب الطول المتبقي بعد العناوين */
+    overflow-y: auto;
+    padding-right: 10px; /* يمنع تداخل الشريط مع المحتوى */
+
+}
+.main-card{
+    height: 90vh;
+  margin-top: 1rem;
+    overflow-y: auto;
+    border-radius: 0.8rem !important;
+}
+.icon{
+    width: 20px;
+}
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.first-btn{
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+}
+.second-btn{
+    background-color: white !important;
+    color: #29292A !important;
+    border: 1px solid black !important;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+
+    
+}
+.edit-btn{
+    margin-right: 0.8rem;
+}
+
+.susbend-btn,.edit-btn{
+    width: 40% !important;
+}
+
+.otp-card {
+    
+    max-width: 680px;
+  
+    margin: auto;
+    border-radius: 25px !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .otp-card h3 {
+    font-weight: bold;
+  }
+  
+  .otp-card p {
+    font-size: 14px;
+  }
+  
+  .otp-card .border {
+    border: 1px solid #ddd !important;
+  }
+  
+  .otp-close-btn{
+    background-color: transparent !important;
+    color: #29292A !important;
+  }
+
+  .modal-footer.d-flex.justify-content-center{
+    border: 0;
+  }
+
+  .susbend-close-btn{
+    background-color: transparent !important;
+    border: 2px solid #29292A !important;
+    color: #29292A !important;
+}
+@media (max-width: 575.98px) {
+.main-container{
+    flex-direction: column;
+}
+.aside{
+    width: 90%;
+    padding-top: 1rem;
+    margin-inline: auto;
+    margin-bottom: 1rem !important ;
+    
+   ;
+}
+.main{
+    width: 90%;
+    margin-inline: auto;
+    margin-top: 1rem ;
+}
+.password-inputs{
+    flex-direction: column;
+}
+.password-inputs div{
+    margin-bottom: 0.5rem;
+} 
+form button{
+width: 50%;
+ height: 50px; font-size: 14px !important ;
+ background-color: #1B85FF !important;
+ color: #ffffff !important;
+}
+
+.yellow-box{
+    margin-inline: 0 !important;
+}
+.yellow-box > div > h5 {
+    font-size: 0.9rem; 
+}
+.table-data{
+    width: 100%;
+    margin-inline: auto;
+    margin-top: 1rem;
+}
+
+.btn-box{
+    margin-bottom: 1rem;
+}
+
+.cross-btn{
+    right: 5px; top: 0px;
+    width: 24px;
+    height: 24px
+}
+
+.tow-steps-sec>div{
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.tow-steps-sec>div button{
+    width: 100%;
+   
+  
+}
+
+.card.p-4.otp-card{
+    padding: 0 !important;
+}
+
+.otp-submit-btn,.otp-close-btn{
+
+    margin-left: 0 !important;
+}
+.modal-body{
+    padding: 0 !important;
+}
+.susbend-box{
+    padding-top: 0.3rem !important;
+    padding-bottom: 0.3rem !important;
+}
+
+.susbend-susbend-btn, .susbend-close-btn{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.first-btn{
+    margin-bottom: 0.6rem !important;
+}
+
+
+
+}
+
+/* Small devices (tablets, 576px and up) */
+@media (min-width: 576px) {
+    .main-container{
+        flex-direction: column;
+    }
+    .aside{
+        width: 90%;
+        margin-inline: auto;
+        margin-bottom: 1rem !important;
+    }
+    .main{
+        width: 90%;
+        margin-inline: auto;
+        margin-top: 1rem !important;
+    }
+    .cross-btn{
+        right: 14px; top: 10px;
+        width: 24px;
+        height: 24px
+    }
+    .password-inputs{
+        flex-direction: column;
+    }
+    .password-inputs div{
+        margin-bottom: 0.5rem;
+    }
+    .change-password-btn{
+        width: 50% !important;
+        font-size: 16px;
+        }
+    .table-data{
+        width: 100%;
+        margin-inline: auto;
+        margin-top: 1rem;
+    }
+    .tow-steps-sec>div button{
+        width: 100%;
+       
+      
+    }
+
+    .info-circle{
+        width: 70px;
+    }
+    
+}
+
+/* Medium devices (desktops, 768px and up) */
+@media (min-width: 768px) {
+    .main-container{
+        flex-direction: row;
+    }
+    .aside{
+        width: 35.4%;
+        margin-top: 1rem;
+        margin-right: 0.5rem;
+       }
+    .main{
+        width: 63.6%;
+        margin-inline: auto;
+    }
+    .password-inputs{
+        flex-direction: column;
+    }
+    .change-password-btn{
+        width: 50% !important;
+        }
+    .password-inputs div{
+        margin-bottom: 0.5rem;
+    }
+    .susbend-btn,.edit-btn{
+        width: 55% !important;
+    }
+    
+    
+    
+   
+}
+
+/* Large devices (large desktops, 992px and up) */
+@media (min-width: 992px) {
+    .main-container{
+        flex-direction: row;
+    }
+    .aside{
+        width: 33.4%;
+        margin-inline: 1.2rem;   
+        margin-top: 1rem;  }
+    .main{
+        width: 66.6%;
+        margin-inline: auto;
+    }
+    .change-password-btn{
+        width: 33% !important;
+        }
+    .password-inputs{
+        flex-direction: row;
+    }
+    .tow-steps-sec>div button{
+        width: 10%;
+       
+      
+    }
+}
+
+/* Extra large devices (larger desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .main-container{
+        flex-direction: row;
+    }
+    .aside{
+        width: 33.4%;
+        margin-inline: 1.2rem; 
+        margin-top: 1rem;
+        justify-content: center !important;    }
+    .main{
+        width: 66.6%;
+        margin-inline: auto;
+    }
+    .password-inputs{
+        flex-direction: row;
+    }
+    .tow-steps-sec>div button{
+        width: 10%;
+       
+      
+    }
+    .role{
+        font-size: 1rem !important;
+    }
+}
+
+/* Extra extra large devices (larger screens, 1400px and up) */
+@media (min-width: 1400px) {
+    .main-container{
+        flex-direction: row;
+    }
+    .aside{
+        width: 33.4%;
+        margin-inline: 1.2rem;
+
+    }
+    .main{
+        width: 66.6%;
+        margin-inline: auto;
+    }
+    .password-inputs{
+        flex-direction: row;
+    }
+    .tow-steps-sec>div button{
+        width: 10%;
+       
+      
+    }
+
+    .main-card{
+        margin-top: 1rem;
+    }
+ 
+
+}

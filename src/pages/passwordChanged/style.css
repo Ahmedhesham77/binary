@@ -1,0 +1,23 @@
+.password-changed-container{
+    min-height: 100vh;
+}
+.password-changed-container>.container{
+    max-width: 645px;
+}
+.shield-img{
+    width: 150px;
+    height: 150px;
+}
+.icon-password{
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width:567px) {
+    .password-changed-text>h3{
+        color: #29292A;
+        
+        font-weight: 600;
+    }
+    
+}

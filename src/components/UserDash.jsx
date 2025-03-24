@@ -1,35 +1,33 @@
 import { CCard, CCardBody, CCardHeader, CRow, CCol, CBadge } from "@coreui/react";
+import "./style.css"
 const UserDetails = () => {
 
 
     return (
-        <CCard className="shadow-sm p-3 ms-2 mt-4" style={{ maxWidth: "525px" }}>
+        <CCard className="side-bar-main" >
             {/* Header - Logo */}
-            <CCardHeader className="text-center border-0" style={{ backgroundColor: "#F5F5F5" }}>
+            <CCardHeader >
                 <img src="/images/company.png" alt="Company Logo" height="120" />
             </CCardHeader>
 
-            <CCardBody>
+            <CCardBody className="side-bar-data-container">
                 {/* Company Info */}
-                <p className="text-muted">Company Name <span className="text-muted">Company Name</span></p>
-                <h5 className="fw-bold">100205</h5>
+                <p >Company Name <span >Company Name</span></p>
+                <h6 >100205</h6>
 
                 {/* License Status */}
-                <div className="d-flex align-items-center justify-content-between my-3">
-                    <CBadge style={{ backgroundColor: "#E0FFE3", color: "#29292A", fontWeight: "light" }} className="p-3 w-75 fs-6  ">License status:<span style={{ color: "#59C762" }} >Active</span> </CBadge>
-                    <CBadge style={{ backgroundColor: "#F5F5F5", color: "#696A6C" }} className="p-3 ">Test Test</CBadge>
+                <div className="License-status">
+                    <CBadge >License status:<span  >Active</span> </CBadge>
+                    <CBadge className="second-badge ">Test Test</CBadge>
                 </div>
 
                 {/* Subscription Warning */}
                 <div
-                    className="d-flex align-items-center justify-content-between p-3 rounded"
-                    style={{
-                        backgroundColor: "#FFF9EC",
-                        border: "2px dashed #FDB528",  // Border dashed بلون FDB528
-                    }}
+                    className="subscription-warning"
+
                 >
                     <span> <img src="/images/lamp.png" alt="" /> Subscription is about to expire</span>
-                    <strong className="text-dark fs-5"><span style={{ color: " #FDB528" }} > 3</span> Days</strong>
+                    <strong ><span  > 3</span> Days</strong>
                 </div>
 
                 <CRow className="mt-5">
@@ -48,7 +46,7 @@ const UserDetails = () => {
 
                 {/* Devices & Attempts */}
                 <CRow className="text-center mt-3">
-                    <CCol className="border-end">
+                    <CCol >
                         <div className=" bg-light rounded " style={{ border: "2px dashed #3FBC48" }}>
                             <p className="mb-0 text-success">Active Devices</p>
                             <h5 className="fw-bold ">3</h5>

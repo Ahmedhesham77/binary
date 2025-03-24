@@ -1,16 +1,46 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
-.image-container {
+.forget-password-image-container {
     width: 100%;
     display: flex;
     justify-content: center;
+    padding: 20px;
     align-items: center;
     background: linear-gradient(to left, #DDEDFF 50%, #B8D9FF 100%);
-    padding: 20px;
     border-radius: 10px;
 }
+.forget-password-image-container>img{
+    width: 40%;
+}
 
+.txt-input{
+    font-size: 14px;
+}
+.card-body.forget-password>h2{
+color: #29292A;
+}
+
+.card-body.forget-password>p{
+color: #5E5E60;
+}
 .rockstar-font{
     font-family: 'Rock Salt'
+}
+
+@media (max-width:567px) {
+    .forget-password-container>.container {
+    
+        padding: 0.5rem !important;
+    
+    }
+    .forget-password-image-container>img{
+        width: 40%;
+    }
+    .forget-password-input-group{
+        flex-direction: column !important;
+    }
+    .forget-password-input-group>input{
+      width: 100% !important;
+    }
 }

@@ -50,6 +50,9 @@ const Sidebar = () => {
                         <Nav.Item>
                             <Link to="/successfuly" className="text-white">Successfuly</Link>
                         </Nav.Item>
+                        <Nav.Item>
+                            <Link to="/myprofile" className="text-white">myprofile</Link>
+                        </Nav.Item>
                     </Nav>
                 </div>
             )}
